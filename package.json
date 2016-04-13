@@ -1,6 +1,6 @@
 {
   "name": "vue-webpack-init",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A scaffold template for the first step (Vue and webpack).",
   "main": "index.js",
   "scripts": {

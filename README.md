@@ -1,10 +1,10 @@
-# vue-template-init
+# vue-webpack-init
 A scaffold template for the first step.
 
 
 ## Usage
 ``
-npm install -g vue-template-init
+git clone https://github.com/banama/vue-webpack-init
 ``
 
 or
@@ -14,7 +14,7 @@ or
 
 ## Other
 
-`Vue-template-init` is a scaffold. It will bring a template project for you. 
+`Vue-template-init` is a scaffold. It will bring a template project for you.
 * vue.js
 * webpack
 * [webpack-boost](https://github.com/banama/webpack-boost)(A simple lib for config webpack.)
@@ -22,7 +22,7 @@ or
 * babel
 * scss/stylus/less
 * vue-loader
- 
+
 ## Tree
 
 ```
