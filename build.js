@@ -44,7 +44,8 @@ if(process.argv[2] == 'dev'){
         ])
         .hook(function(){
             this.config.postcss.push(require('cssnano'))
-            this.setPublic('')
+            // if pserver 9999
+            // this.setPublic('')
         })
         .run()
 }
@@ -65,6 +66,7 @@ if(process.argv[2] == 'live'){
                 chunk: ['main']
             },
         ])
+        .setExtract(['sty', 'css', 'less', 'scss', 'stylus'], '[name].css')
         .hook(function(){
             this.setPublic('')
         })

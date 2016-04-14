@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/banama/vue-webpack-init#readme",
   "dependencies": {
-    "webpack-boost": "^0.0.3",
+    "webpack-boost": "^0.0.4",
     "autoprefixer": "^6.3.4",
     "babel": "^6.5.2",
     "babel-cli": "^6.6.5",
@@ -59,7 +59,8 @@
     "webpack-dev-server": "^1.14.1",
     "webpack-hot-middleware": "^2.10.0",
     "style-loader": "^0.13.1",
-    "vue": "^1.0.21"
+    "vue": "^1.0.21",
+    "vue-router": "^0.7.13"
   },
   "devDependencies": {}
 }
