@@ -38,15 +38,15 @@ There are some version scaffold.
 
 * SPA  (Vue + Webpack + Vue-router)
 
-> git  -b SPA clone https://github.com/banama/vue-webpack-init
+> git clone -b SPA https://github.com/banama/vue-webpack-init
 
 * SPA-vuex  (Vue + Webpack + Vue-router + Vuex)
 
-> git -b SPA-vuex clone https://github.com/banama/vue-webpack-init
+> git clone -b SPA-vuex https://github.com/banama/vue-webpack-init
 
 * SPA-redux  (Vue + Webpack + Vue-router + Redux)
 
-> git -b SPA-redux clone https://github.com/banama/vue-webpack-init
+> git clone -b SPA-redux https://github.com/banama/vue-webpack-init
 
 ## Tree (master)
 
