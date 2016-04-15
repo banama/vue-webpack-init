@@ -3,14 +3,19 @@ A scaffold template for the first step.
 
 
 ## Usage
-``
-git clone https://github.com/banama/vue-webpack-init
-``
+```
+git clone https://github.com/banama/vue-webpack-init && cnpm install
+
+npm run dev // run on dev mode
+
+npm run pro // run on pro mode
+
+npm run live // run on lvie and develop mode (hmr and so on)
+```
 
 or
 
 [vue-cli](https://github.com/vuejs/vue-cli)
-
 
 ## Other
 
@@ -23,7 +28,19 @@ or
 * scss/stylus/less
 * vue-loader
 
-## Tree
+## Branch
+
+There are some version scaffold.
+
+* master  vue + webpack
+
+* SPA  Vue + Webpack + Vue-router
+
+* SPA-vuex Vue + Webpack + Vue-router + Vuex
+
+* SPA-redux Vue + Webpack + Vue-router + Redux
+
+## Tree (master)
 
 ```
 ├── LICENSE
