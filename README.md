@@ -32,13 +32,21 @@ or
 
 There are some version scaffold.
 
-* master  vue + webpack
+* master (vue + webpack)
+ 
+> git clone https://github.com/banama/vue-webpack-init
 
-* SPA  Vue + Webpack + Vue-router
+* SPA  (Vue + Webpack + Vue-router)
 
-* SPA-vuex Vue + Webpack + Vue-router + Vuex
+> git  -b SPA clone https://github.com/banama/vue-webpack-init
 
-* SPA-redux Vue + Webpack + Vue-router + Redux
+* SPA-vuex  (Vue + Webpack + Vue-router + Vuex)
+
+> git -b SPA-vuex clone https://github.com/banama/vue-webpack-init
+
+* SPA-redux  (Vue + Webpack + Vue-router + Redux)
+
+> git -b SPA-redux clone https://github.com/banama/vue-webpack-init
 
 ## Tree (master)
 
