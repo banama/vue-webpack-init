@@ -13,21 +13,17 @@ router.map({
         }
     },
     '/bar': {
-        component: function(res){
-            require(['../components/bar.vue'], res)
-        },
-        data: {
-            page: "bar",
-            desc: "This is the page bar."
-        },
+        component: Vue.extend({
+            template: "<router-view></router-view>"
+        }),
         subRoutes: {
             '/foo': {
                 component: function(res){
                     require(['../components/foo.vue'], res)
                 },
                 data: {
-                    page: "foo",
-                    desc: "This is the page foo."
+                    page: "/bar/foo",
+                    desc: "This is the page /bar/foo."
                 }
             }
         }
