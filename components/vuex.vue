@@ -1,16 +1,18 @@
 <template>
-    <h6>
-        this is the compoent base.<br>
-        use vuex state count {{count}}
-    </h6>
+    count {{count}}<br>
+    <button @click="incre">加一</button>
 </template>
 
 <script>
-import store from '../src/vuex'
+import { incre } from '../src/action.js'
+import store from '../src/vuex.js'
 
 export default {
     store,
     vuex: {
+        actions: {
+            incre: incre
+        },
         getters: {
             count: function(state){
                 return state.count

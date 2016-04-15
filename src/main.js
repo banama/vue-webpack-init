@@ -3,31 +3,35 @@ import VueRouter from 'vue-router'
 var App = Vue.extend({})
 var router = new VueRouter()
 router.map({
+    '/vuex': {
+        component: function(res){
+            require(['../components/vuex.vue'], res)
+        }
+    },
     '/foo': {
         component: function(res){
             require(['../components/foo.vue'], res)
         },
         data: {
-            page: "foo",
-            desc: "This is the page foo."
+            page: "this is /foo",
+            desc: "------------."
         }
     },
     '/bar': {
-        component: function(res){
-            require(['../components/bar.vue'], res)
-        },
-        data: {
-            page: "bar",
-            desc: "This is the page bar."
-        },
+        component: Vue.extend({
+            template: "<router-view></router-view>"
+        }),
         subRoutes: {
-            '/foo': {
-                component: function(res){
-                    require(['../components/foo.vue'], res)
-                },
+            '/': {
+                component: require('../components/bar.vue'),
                 data: {
-                    page: "foo",
-                    desc: "This is the page foo."
+                    page: "this is /bar",
+                    desc: "------------."
+                }
+            },
+            '/base': {
+                component: function(res){
+                    require(['../components/base-com.vue'], res)
                 }
             }
         }
