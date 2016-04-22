@@ -5,6 +5,7 @@ var wb = require('webpack-boost')
 
 // production
 if(process.argv[2] == 'pro'){
+    process.env.NODE_ENV = "production"
     new wb()
         .setPath('static')
         .setProject('vue-template')
@@ -23,11 +24,12 @@ if(process.argv[2] == 'pro'){
         .hook(function(){
             this.config.postcss.push(require('cssnano'))
         })
-        .live()
+        .run()
 }
 
 // dev
 if(process.argv[2] == 'dev'){
+    process.env.NODE_ENV = "dev"
     new wb()
         .setPath('dist')
         .setProject('teststatic')
@@ -43,14 +45,15 @@ if(process.argv[2] == 'dev'){
             }
         ])
         .hook(function(){
-            this.config.postcss.push(require('cssnano'))
-            this.setPublic('')
+            // if pserver(python -m SimpleHTTPServer 9999)
+            // this.setPublic('')
+            this.config.watch = true
         })
         .run()
 }
 
-// live
 if(process.argv[2] == 'live'){
+    process.env.NODE_ENV = "dev"
     new wb()
         .setPath('dist')
         .setProject('teststatic')
@@ -65,6 +68,7 @@ if(process.argv[2] == 'live'){
                 chunk: ['main']
             },
         ])
+        .setExtract(['sty', 'css', 'less', 'scss', 'stylus'], '[name].css')
         .hook(function(){
             this.setPublic('')
         })
