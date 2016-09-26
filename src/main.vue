@@ -17,7 +17,7 @@ module.exports = {
 
 <style lang='stylus' scoped>
 .message
-    color #333
+    color #999
 </style>
 
 

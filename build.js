@@ -71,6 +71,9 @@ if(process.argv[2] == 'live'){
         .setExtract(['sty', 'css', 'less', 'scss', 'stylus'], '[name].css')
         .hook(function(){
             this.setPublic('')
+            this.devtool = 'source-map'
         })
-        .live()
+        .live({
+            port: 8001
+        })
 }
